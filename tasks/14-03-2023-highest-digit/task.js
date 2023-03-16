@@ -1,0 +1,3 @@
+const highestDigit = (number) => {
+
+}
