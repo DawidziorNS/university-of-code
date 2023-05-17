@@ -1,4 +1,4 @@
-const trace = (arr) => arr.reduce((a, b, i) => a + b[i], 0)
+const trace = (arr) => arr.reduce((acc, elem, idx) => acc + elem[idx], 0)
 
 console.log(trace([
     [1, 2, 3],
