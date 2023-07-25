@@ -1,5 +1,5 @@
 const specialReverse = (sentence, letter) => sentence.split(' ')
-    .map(word => word.includes(letter)
+    .map(word => word.startsWith(letter)
         ? word.split('').reverse().join('')
         : word)
     .join(' ')
