@@ -1,4 +1,5 @@
-const mostExpensive = (obj) => Object.entries(obj)
+const mostExpensive = (obj) => `The most expensive is ${Object.keys(obj)
+    .reduce((a, b) => obj[a] > obj[b] ? a : b)}`
 
 console.log(mostExpensive({
     "Diamond Earrings": 980,
